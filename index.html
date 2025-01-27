@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Travel Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <h2>Discover Your Next Adventure</h2>
+        <input type="text" id="search" placeholder="Search for a destination...">
+        <button onclick="searchDestination()">Search</button>
+        <div id="results"></div>
+    </section>
+    
+    <section id="destinations" class="section">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <!-- Dynamic Content Placeholder -->
+            <div id="destination-list"></div>
+        </div>
+    </section>
+    
+    <section id="booking" class="section">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="guests">Guests:</label>
+            <input type="number" id="guests" min="1" max="10" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    
+    <section id="blogs" class="section">
+        <h2>Travel Blogs</h2>
+        <div class="blog-grid">
+            <article>
+                <h3>Exploring the Streets of Paris</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Top 10 Beaches in the World</h3>
+                <p>Vestibulum volutpat pretium libero, eu luctus...</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: support@travelexplorer.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.709730217375!2d85.8167453746968!3d20.353606710625982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19094076713875%3A0xb25b0c927e78c50f!2sKIIT%20University!5e0!3m2!1sen!2sin!4v1737997747339!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+    </section>
+
+    <section id="login" class="section">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#signup">Sign up here</a>.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
